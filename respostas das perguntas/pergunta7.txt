@@ -1,0 +1,7 @@
+--Qual a qtd de ship-service-level do mais popular?
+
+select "ship-service-level", count(*) as servicos
+from vendas v
+group by "ship-service-level"
+order by servicos desc
+limit 1;

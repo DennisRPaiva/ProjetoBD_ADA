@@ -1,0 +1,8 @@
+--Qual o produto com maior numero de cancelamentos?
+
+select "Codigo" , "Courier Status", count(*) as total_ocorrencias
+from vendas v
+where "Courier Status" = 'Cancelled' 
+group by "Codigo", "Courier Status"
+order by total_ocorrencias desc
+limit 1;

@@ -1,0 +1,20 @@
+Qual é o produto mais vendido em termos de quantidade? Feito
+Qual é o produto mais vendido em termos de receita? PULEI!
+Qual é a média de preço dos produtos vendidos? PULEI
+Qual é o país com mais vendas? Feito
+Qual é o serviço de entrega mais utilizado? Feito
+Qual é o estilo de produto mais popular entre os clientes? Pulei
+Qual é o total de vendas por mês/ano? feito
+Qual é a média de produtos vendidos por pedido? pulei
+Qual é a média de receita por pedido? pulei
+Quais são os produtos que nunca foram vendidos? feito
+Qual é a distribuição das vendas ao longo do tempo?
+Qual é o courier com o melhor desempenho em termos de tempo de entrega?
+Quais são os produtos com o maior número de devoluções?
+Qual é a tendência de preço ao longo do tempo para produtos específicos?
+Qual é a sazonalidade nas vendas?
+Quais são os produtos mais rentáveis em diferentes países?
+Qual é a correlação entre o preço do produto e a quantidade vendida?
+Qual é o perfil de compra dos clientes por país?
+Quais são os produtos mais vendidos em cada estilo?
+Como a satisfação do cliente se correlaciona com o tempo de entrega?

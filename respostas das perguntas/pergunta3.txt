@@ -1,0 +1,7 @@
+--Qual é o serviço de entrega mais utilizado?
+
+select "Style" , count(*) as total_style
+from vendas v
+group by "Style"
+order by total_style desc
+limit 1;

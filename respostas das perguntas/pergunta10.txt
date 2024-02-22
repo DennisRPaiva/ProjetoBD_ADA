@@ -1,0 +1,8 @@
+--Qual o pais teve o maior numero de vendas concluidas?
+
+SELECT "ship-country" , count("Qty") AS total_vendas_concluidas
+FROM vendas v
+where "Fulfillment" = 'Yes'
+GROUP BY "ship-country"
+order by total_vendas_concluidas desc
+limit 1;

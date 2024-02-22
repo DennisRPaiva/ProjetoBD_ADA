@@ -1,0 +1,9 @@
+--Quais produto teve maior numero de vendas canceladas?
+
+SELECT v."Courier Status", v."Codigo", p."Produto",COUNT(*) AS total_cancelamentos
+FROM vendas v
+inner join produtos p on v."Codigo" = p."Codigo"
+where v."Courier Status" = 'Cancelled'
+GROUP BY v."Courier Status", v."Codigo", p."Produto"
+ORDER BY v."Courier Status", total_cancelamentos desc
+limit 1;

@@ -1,0 +1,7 @@
+--Qual a correlação entre style e codigo?
+
+select "Codigo", "Style", count(*) as total_style
+from vendas v
+group by "Style", "Codigo"
+order by total_style desc
+

@@ -1,0 +1,7 @@
+--Qual é o país com mais vendas?
+
+select "ship-country", count(*) as total_paises
+from vendas v
+group by "ship-country"
+order by total_paises desc
+limit 1;

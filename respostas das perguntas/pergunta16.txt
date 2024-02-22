@@ -1,0 +1,8 @@
+--Qual é o produto mais vendido em termos de receita?
+
+SELECT p."Produto", SUM(v."Qty" * REPLACE(REPLACE(p."Preco", '$', ''), ',', '')::numeric) AS receita_total
+FROM vendas v
+JOIN produtos p ON v."Codigo" = p."Codigo"
+GROUP BY p."Produto"
+ORDER BY receita_total DESC
+LIMIT 1;

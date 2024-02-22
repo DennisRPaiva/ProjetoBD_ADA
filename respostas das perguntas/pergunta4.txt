@@ -1,0 +1,6 @@
+--Qual é o total de vendas por mês?
+
+SELECT SUBSTR(v."Date", 1, 1) AS month, COUNT(*) AS count_cases
+FROM vendas v 
+WHERE SUBSTR(v."Date", 1, 1) IN ('6', '5', '4')
+GROUP BY SUBSTR(v."Date", 1, 1);

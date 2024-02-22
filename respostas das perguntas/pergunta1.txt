@@ -1,0 +1,41 @@
+--Qual é o produto mais vendido em termos de quantidade?
+/*
+select "Codigo" , count(*) as total_ocorrencias
+from vendas
+group by "Codigo" 
+order by total_ocorrencias desc
+limit 1;
+
+
+select "Produto" 
+from produtos
+where produtos."Codigo" = 'BS001900'
+
+
+SELECT p."Codigo", p."Produto" , COUNT(*) AS total_ocorrencias
+FROM vendas v
+inner join produtos p on p."Codigo" = v."Codigo" 
+GROUP BY p."Codigo", p."Produto" 
+HAVING COUNT(*) = (
+    SELECT COUNT(*)
+    FROM vendas
+    GROUP BY "Codigo"
+    ORDER BY COUNT(*) DESC
+    LIMIT 1
+);
+
+*/
+
+
+Não entendi por que isso funciona. Perguntar em aula.
+/*
+SELECT p."Codigo", p."Produto", q.total_ocorrencias
+FROM produtos p
+JOIN (
+    SELECT v."Codigo", COUNT(*) as total_ocorrencias
+    FROM vendas v
+    GROUP BY v."Codigo"
+    ORDER BY COUNT(*) DESC
+    LIMIT 1
+) q ON p."Codigo" = q."Codigo";
+*/

@@ -1,0 +1,7 @@
+--Quais são os produtos mais vendidos em diferentes países?
+
+SELECT v."ship-country", v."Codigo", p."Produto",COUNT(*) AS total_vendas
+FROM vendas v 
+inner join produtos p on v."Codigo" = p."Codigo"
+GROUP BY v."ship-country", v."Codigo", p."Produto" 
+ORDER BY v."ship-country", total_vendas DESC;

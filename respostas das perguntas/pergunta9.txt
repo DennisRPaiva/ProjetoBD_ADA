@@ -1,0 +1,5 @@
+--Qual o qtd de produtos pedidos por pais?
+
+SELECT "ship-country" , SUM("Qty") AS quantidade_pedidos
+FROM vendas v 
+GROUP BY "ship-country";

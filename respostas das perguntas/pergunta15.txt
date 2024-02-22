@@ -1,0 +1,9 @@
+--Qual o mes com maior numero de fulfillment?
+
+SELECT EXTRACT(MONTH FROM TO_DATE(v."Date", 'MM/DD/YYYY')) AS mes,
+       COUNT(*) AS total_entregas
+FROM vendas v
+WHERE v."Fulfillment" = 'Yes'
+GROUP BY EXTRACT(MONTH FROM TO_DATE(v."Date", 'MM/DD/YYYY'))
+ORDER BY total_entregas DESC
+LIMIT 1;

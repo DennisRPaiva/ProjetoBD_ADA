@@ -1,0 +1,7 @@
+--Quais são os produtos que nunca foram vendidos?
+
+--mostra quais produtos nunca foram vendidos, retorna nulo pois todo produto ja foi vendido.
+SELECT p."Codigo" 
+FROM produtos p
+LEFT JOIN vendas v ON p."Codigo" = v."Codigo" 
+WHERE v."Codigo"  IS NULL;

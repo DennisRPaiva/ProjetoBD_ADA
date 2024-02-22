@@ -1,0 +1,6 @@
+--Quais a qtd de produtos entregue?
+
+select "Courier Status", count(*) as entregues
+from vendas v
+where "Courier Status" = 'Shipped'
+group by "Courier Status"
